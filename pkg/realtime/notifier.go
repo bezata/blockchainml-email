@@ -11,3 +11,11 @@ import (
     "go.uber.org/zap"
     "github.com/bezata/blockchainml-email/internal/monitoring/metrics"
 )
+
+type Notifier struct {
+    // Define notifier fields
+}
+
+func NewNotifier(redis interface{}, logger *zap.Logger, metrics *metrics.Metrics) *Notifier {
+    return &Notifier{}
+}

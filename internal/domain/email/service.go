@@ -9,6 +9,10 @@ import (
 	"go.uber.org/zap"
 )
 
+type Repository interface {
+	SendEmail(params SendEmailParams) error
+}
+
 type Service struct {
 	repo      Repository
 	cache     *cache.Cache

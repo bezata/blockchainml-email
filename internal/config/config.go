@@ -7,20 +7,20 @@ import (
 )
 
 type Config struct {
-	Server     ServerConfig     `json:"server"`
+	Server ServerConfig `json:"server"`
 	MongoDB    MongoDBConfig    `json:"mongodb"`
-	Redis      RedisConfig      `json:"redis"`
+	Redis      interface{}      `json:"redis"`
 	R2         R2Config         `json:"r2"`
 	JWT        JWTConfig        `json:"jwt"`
 	Monitoring MonitoringConfig `json:"monitoring"`
-	Search     SearchConfig     `json:"search"`
-	Cache      CacheConfig      `json:"cache"`
+	Search     interface{}     `json:"search"`
+	Cache      interface{}     `json:"cache"`
 	Realtime   RealtimeConfig   `json:"realtime"`
 	Cloudflare CloudflareConfig `json:"cloudflare"`
 }
 
 type ServerConfig struct {
-	Port            int    `json:"port"`
+	Port            string `json:"port"`
 	Host            string `json:"host"`
 	ReadTimeout     int    `json:"readTimeout"`
 	WriteTimeout    int    `json:"writeTimeout"`
@@ -103,13 +103,6 @@ type CloudflareConfig struct {
 	R2Bucket      string `json:"r2Bucket"`
 }
 
-type SecurityConfig struct {
-	CloudflareAccess struct {
-		AUD         string   `json:"aud"`
-		TeamDomain string   `json:"teamDomain"`
-		AllowedIPs []string `json:"allowedIps"`
-	} `json:"cloudflareAccess"`
-}
 
 // LoadConfig loads config from file and environment variables
 func LoadConfig(path string) (*Config, error) {
@@ -130,4 +123,17 @@ func LoadConfig(path string) (*Config, error) {
 	}
 
 	return &config, nil
+}
+
+func Load() (*Config, error) {
+    // Implementation of configuration loading
+    // This could be from environment variables, file, etc.
+    return &Config{
+        Server: ServerConfig{
+            Port:         "8080",
+            ReadTimeout:  30,
+            WriteTimeout: 30,
+        },
+        // ... other config initializations
+    }, nil
 }

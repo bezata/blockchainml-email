@@ -1,6 +1,7 @@
 package services
 
 import (
+	"context"
 	"github.com/bezata/blockchainml-email/internal/domain/email"
 	"github.com/bezata/blockchainml-email/internal/monitoring/metrics"
 	"github.com/bezata/blockchainml-email/pkg/cache"
@@ -30,4 +31,17 @@ func NewEmailService(
 		logger:  logger,
 		metrics: metrics,
 	}
+}
+
+type SendEmailParams struct {
+	From        string
+	To          []string
+	Subject     string
+	Content     email.EmailContent
+	Attachments []email.AttachmentInput
+	ThreadID    *string
+}
+
+func (s *EmailService) SendEmail(ctx context.Context, params SendEmailParams) (*email.Email, error) {
+	// implementation of SendEmail method
 }

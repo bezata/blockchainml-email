@@ -12,11 +12,6 @@ type RateLimitConfig struct {
 	BurstSize         int `json:"burstSize"`
 }
 
-type JWTConfig struct {
-	Secret      string `json:"secret"`
-	ExpiryHours int    `json:"expiryHours"`
-}
-
 type CloudflareSecurityConfig struct {
 	AccessAUD  string   `json:"accessAud"`
 	TeamDomain string   `json:"teamDomain"`
