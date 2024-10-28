@@ -3,7 +3,7 @@ package security
 import (
 	"context"
 
-	"github.com/bezata/blockchainml-mail/internal/config"
+	"github.com/bezata/blockchainml-email/internal/config"
 	"go.uber.org/zap"
 )
 

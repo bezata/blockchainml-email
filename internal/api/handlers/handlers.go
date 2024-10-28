@@ -1,10 +1,10 @@
 package handlers
 
 import (
-	"github.com/bezata/blockchainml-mail/internal/domain/email"
-	"github.com/bezata/blockchainml-mail/internal/monitoring/metrics"
-	"github.com/bezata/blockchainml-mail/pkg/realtime"
-	"github.com/bezata/blockchainml-mail/pkg/search"
+	"github.com/bezata/blockchainml-email/internal/domain/email"
+	"github.com/bezata/blockchainml-email/internal/monitoring/metrics"
+	"github.com/bezata/blockchainml-email/pkg/realtime"
+	"github.com/bezata/blockchainml-email/pkg/search"
 	"go.uber.org/zap"
 )
 

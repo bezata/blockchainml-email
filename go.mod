@@ -1,18 +1,18 @@
-module github.com/bezata/blockchainml-mail
+module github.com/bezata/blockchainml-email
 
 go 1.21
 
 require (
-	github.com/cloudflare/cloudflare-go v0.85.0
 	github.com/elastic/go-elasticsearch/v8 v8.12.0
-	github.com/gin-gonic/gin v1.10.0
+	github.com/gin-gonic/gin v1.9.1
 	github.com/google/uuid v1.6.0
 	github.com/gorilla/websocket v1.5.0
 	github.com/hibiken/asynq v0.24.1
 	github.com/ory/dockertest/v3 v3.10.0
 	github.com/prometheus/client_golang v1.20.5
 	github.com/redis/go-redis/v9 v9.5.1
-	github.com/stretchr/testify v1.9.0
+	github.com/stretchr/testify v1.8.4
+	github.com/cloudflare/cloudflare-go v0.85.0
 	go.mongodb.org/mongo-driver v1.17.1
 	go.uber.org/zap v1.27.0
 )

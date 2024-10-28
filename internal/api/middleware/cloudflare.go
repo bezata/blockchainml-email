@@ -1,7 +1,7 @@
 package middleware
 
 import (
-	"github.com/bezata/blockchainml-mail/internal/security"
+	"github.com/bezata/blockchainml-email/internal/security"
 	"github.com/gin-gonic/gin"
 	"go.uber.org/zap"
 )

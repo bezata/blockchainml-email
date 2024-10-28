@@ -1,9 +1,9 @@
 package services
 
 import (
-	"github.com/bezata/blockchainml-mail/internal/domain/email"
-	"github.com/bezata/blockchainml-mail/pkg/cache"
-	"github.com/bezata/blockchainml-mail/pkg/search"
+	"github.com/bezata/blockchainml-email/internal/domain/email"
+	"github.com/bezata/blockchainml-email/pkg/cache"
+	"github.com/bezata/blockchainml-email/pkg/search"
 	"go.uber.org/zap"
 )
 

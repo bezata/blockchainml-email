@@ -3,9 +3,9 @@ package domain
 import (
 	"context"
 
-	"github.com/bezata/blockchainml-mail/internal/domain/email"
-	"github.com/bezata/blockchainml-mail/internal/domain/staff"
-	"github.com/bezata/blockchainml-mail/internal/domain/thread"
+	"github.com/bezata/blockchainml-email/internal/domain/email"
+	"github.com/bezata/blockchainml-email/internal/domain/staff"
+	"github.com/bezata/blockchainml-email/internal/domain/thread"
 )
 
 type EmailService interface {

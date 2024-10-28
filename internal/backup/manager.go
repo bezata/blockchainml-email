@@ -5,11 +5,11 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/bezata/blockchainml-mail/internal/backup"
-	"github.com/bezata/blockchainml-mail/internal/config"
-	"github.com/bezata/blockchainml-mail/internal/r2"
-	"github.com/bezata/blockchainml-mail/internal/storage"
-	"github.com/bezata/blockchainml-mail/internal/zap"
+	"github.com/bezata/blockchainml-email/internal/backup"
+	"github.com/bezata/blockchainml-email/internal/config"
+	"github.com/bezata/blockchainml-email/internal/r2"
+	"github.com/bezata/blockchainml-email/internal/storage"
+	"github.com/bezata/blockchainml-email/internal/zap"
 	"github.com/google/uuid"
 )
 

@@ -4,7 +4,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/bezata/blockchainml-mail/internal/monitoring/metrics"
+	"github.com/bezata/blockchainml-email/internal/monitoring/metrics"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"

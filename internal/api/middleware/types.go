@@ -1,7 +1,7 @@
 package middleware
 
 import (
-	"github.com/bezata/blockchainml-mail/internal/monitoring/metrics"
+	"github.com/bezata/blockchainml-email/internal/monitoring/metrics"
 	"go.uber.org/zap"
 )
 

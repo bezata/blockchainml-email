@@ -1,12 +1,12 @@
 package services
 
 import (
-	"github.com/bezata/blockchainml-mail/internal/config"
-	"github.com/bezata/blockchainml-mail/internal/metrics"
-	"github.com/bezata/blockchainml-mail/internal/security"
-	"github.com/bezata/blockchainml-mail/pkg/cache"
-	"github.com/bezata/blockchainml-mail/pkg/realtime"
-	"github.com/bezata/blockchainml-mail/pkg/search"
+	"github.com/bezata/blockchainml-email/internal/config"
+	"github.com/bezata/blockchainml-email/internal/metrics"
+	"github.com/bezata/blockchainml-email/internal/security"
+	"github.com/bezata/blockchainml-email/pkg/cache"
+	"github.com/bezata/blockchainml-email/pkg/realtime"
+	"github.com/bezata/blockchainml-email/pkg/search"
 	"go.uber.org/zap"
 )
 
