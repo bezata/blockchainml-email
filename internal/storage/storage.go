@@ -8,13 +8,6 @@ import (
 	"github.com/bezata/blockchainml-email/internal/domain/thread"
 )
 
-// Repository defines the interface for all storage operations
-type Repository interface {
-    EmailRepository
-    StaffRepository
-    ThreadRepository
-}
-
 // EmailRepository defines email storage operations
 type EmailRepository interface {
     Create(ctx context.Context, email *email.Email) error
